@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar bg-body-secondary fixed-top ">
+      <div class="container-fluid">
+          <div>
+              <img style="width: 40px;" src="logo-removebg-preview.png" alt="">
+              <a class="navbar-brand" href="#">QUEEN</a>
+          </div>
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+              </button>
+
+          <!-- OffCanvas -->
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">QUEEN</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="login.html">Log In</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+            </ul>
+              <form class="d-flex mt-2" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+          </div>
+        </div>
+      </div>
+  </nav>
+
+    <!-- Content -->
+    <img style="margin-top: 30px;" width="100%" height="300vh" src="contact.jpg" alt="">
+    <div class="container text-center"> 
+        <div class="row row-cols-2 row-cols-lg-2 g-3 g-lg-2 mt-2"> 
+          <div class="col"> 
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAX1JREFUWEftl91NxEAMhCedQCdQCVwlB5UAlUAnXClopFiKNv7bPS/KQ1aK7iG59RePPessONhaDsaDEyhSJJuhBwC3aLOK+xHQE4DvFeYLwFtFUG8PD+gVwEfz5/fZUBYQM3FV3oSyTc2UBqRlZstGqAuAnxnyaUBWdv4FahSIcMzUc3X3jUjWZuqxUjoNSFo9G4dAZR6lAdEEf5M0LGzKVrastqcZMlPeKodhsF4fEsApMB6QV0fTYDwg1hFl42+7WDNTTNED4j3LsT9Xpy4r5O1G3uFqdVvP0dE9tkTjh5UlQkWGKJ3a5egREN+QI4hmAZ50rW2koSIgyusZpRbI8rCU1Bkgr8DlkGXXcU7iDOUZajhPZYEYODOWZDrPheoBqoTiXuo43AtUCaXW1AiQFLrl5BnZ5Jld/FEggaJPaR8DGSj1CLoHSILSFgj2Ypx9Gpx5HlYAbcEIJ2BW+7vfdpVAbSYIJ5dIzEKmw5trJlCmjnbPnEBR2g6XoT+fAE0l4zByTAAAAABJRU5ErkJggg=="/> 
+            <div class="p-3">0821 9546 0981</div> 
+          </div> 
+          <div class="col"> 
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAASNJREFUWEftl9ENwjAMRK+bwCZsgpgEmASYBDaBTUCH5MqEBidOKhXJ+WlVJ+752XHTAQsbw8L0IARZGQlCHkIHAFsAK2txo/0B4ALgDID375GmjGL2jS+qXX4EwPdOCnrWeus0fwSTEtKCiHGutN0AbFQwRYI4aY56khTp4IsFMQhGcupAi1QohlcOtyAh20Lro3C9grgd6Wjckg5aKRUJ7uqpIS6mmJ3CXENrikou/UU1pHd0Da1SKtp/taBSWjVUmgWJgxwt2mUH5Wol10ddhLSzXG3JnNpW0SzoF610B5V8XboJ0rXFe28D7SqohIA1JwQFIYuAZf+fGrp3OPdYNFI7m+xaHi7+kC/Nja1/rvO0JvT1MY4/V6vAglAQsghY9heTvk0lIZVu/gAAAABJRU5ErkJggg=="/> 
+            <div class="p-3">queentravel@gmail.com</div> 
+          </div> 
+          <div class="col"> 
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAZNJREFUWEfdmOtNxEAMhOcqASoBOjkqASoBKoGrBDoBDcpKu96X7XVQhKUo9yNxvsx4vfGdcLA4HYwH/wboGsAZwC0A/ubxtanNM483AB9WB6wKPQF4NDwkgfE+VWiB7gC8bEqoEouL1GAaIKsqI+BnAEO1ZkDvAKhOZLwCeOglHAFFKiOf31WqB0RVqI4m8uSWl6BKVKuIHtCnoYC9QCz0Gw0Q+wtXlDa8QMxfWddSyKKOTGqxjPdWKkkgqzqrQLz/Pu/oEohWEcoSK5ZVtkkgT99ZBeJ+R5V+QwJZ6yfCsqKOJNC3xavt2lwhTw2GA8mtwLrSCqciLGv1EwvUUCFPUSeXZZPTQg2LWpukV2oeqMJyaZllU42CGjZGPsSz0iRcrtSs2RaitPYyz9JtqUWoq0nnrz5BWkCcIFjcPO8Z6s8PQkSpNHqhonZ6W0eeYHXFjWDMn7Ap2R5QRd+R1LOpg9dHQi2PQekFIgZFrqjpaK1RKEGlef4Qo7S0evZnw2VTY6qIp4b27EVVbotlfwJ2OKAfNtxjJR53ZyoAAAAASUVORK5CYII="/> 
+            <div class="p-3">09.00 - 17.30 </div> 
+          </div> 
+          <div class="col"> 
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAfhJREFUWEftl+tNgzEMRW83gUmASYBJgEmASYBJYBPQEbXkz83DTiWoEPnTSk3Sk+sb29npxMbuxHj054BuJF1Iutwr/SHpWdLTqvKrCp1JenQg8f9fJd1KArA0VoFeBjAGANRViUZa8tC9pLvkH6FSKXwrCmXUMV5ggEqPFaDP9O7fHjovzF8K2bskTJ0ZPwJUCVnZ2Cshq5j6QRLz02MFiM0zYSuHi41XgWZQ5VCZhMcAsQclg4xtJgfkV0qH94T3VNkz0VxZhSii1/vFsRzMgLiVDGDx1bC+zYAAoUz4vEOi85uOgFjHBfBjWE5GQL18g0J4xcYIqHUg1nW7gRZQ61QoguRsFCWfhQwA5hByrzT7cLjNfi2gqMzMqBkgr6YHO9g7AsUsHMPTyrgVoJZaG0+NgGbKGBw+IRfZTcqUCn+ITYsSgXxrEW/TqB7ZTcq2GiRUSwebrB6BfI2qAJkqGXU4mL84m5oXgbyhsyEbKdf7zYdsqFA0dbknTtD5cB34rnXtY2uBUhiv/KRpwMWUctCi9BIjC30SQ9a3I8DsDRcT48El6JUOFkYoO7DBWaE05fhknb1i+e5ftV6wUunwC3u1KGGV7pTl4hrBSPl2+ioQHrSQD9fO2o+4GCBCYeEwT0RvWDcARKsgd6GqQFVlyvP/gWaSfQGOanslwKAEMwAAAABJRU5ErkJggg=="/> 
+            <div class="p-3">Jl. Dg Tata Raya No.9</div> 
+          </div>
+        </div>
+    </div>
+
+    <!-- Content2 -->
+    <div class="container text-center mt-5"> 
+      <p>Follow Us</p>
+      <a href=""><img class="mt-2" width="40px" height="35px" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAipJREFUWEftlz1KLUEQhb+7DhEUMdDA4IG57sAfDMTA5yIEEfEHEREXoaKRouAKfMYPQzXy/QTiMpQDXTLO7emuuTMXFGwYhmG6q06fOlXV3eGTjc4nw8M3oFxE6jA0BOiZyhkt/P8H6PnlXeMB9BM48hpMzBOwE2A7ZSsFSGwISB1GPLgFbDow1zU/BeimD2AMgEIoUG5AbYUpxdgKcFyeUMXQ3yBgTwhyc3aCqBV+ycCGQjfsBfSa8+L8LwbEhIa0KBkURxchMYbqhEu7107l2EqC3lvBa5GFmF3p6ENJ6BVQMlMCOMtQq0WxbO3SUQyQ6oTtMBaZYoaMAJPAOKAwPwC/gT8lUFURFsMf6lIvgIzmiWBstuTtMmzoPoBSgvQNkIlU2XEIzFd4ugBWgf+huEo/sdGYIYv5AnCeyTSBvarILlvaGJCYkUg3ARlLjQ1gLxO2xoBMP3K2mwG0Duz3myEDNAdIvKkxA1wDqbrWmCET9SBwACxWIDoD1oDnfota+pGwVYtGQ3ovlUCdBn09ZcKlZY0ZkpFiOxgAfgBjoTA+AnfASwCZO8K4AHl6mad1CEyxu8ei62odsa4cM2Zn5dvAmr6tAKZaT9GWq7lqV6lyn0muWr+trr0vqjqg5WJfy2tisus8pPUeHTUF1RUuGfwyh3yBlZbElFegXsYqbxw5hsyBQC23cCVqfFEs79iu0vauw0irV2mv41bmee72rTjyGvkGlGPqDR3bgSWoCs2bAAAAAElFTkSuQmCC"/></a>
+      <a href=""><img class="mt-2" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAaJJREFUWEftl4FNxDAMRf9tApMAkwCTAJPATQJMAqOgh2qUFqe226s4pFpCnK5O+vL94+QOOrM4nBmPdqCoIrtCf6HQhaQHSdeS+Pwm6V3Si6TPCRDPR995JSPpTtJjtBrnOWOA8YIX3w+QtwPwZQaIlb1KeipC2bjsOoBDtVF4CrWrzEKh6keWpAFh3E07zgN6HkpmeXiA1Uzr385DiRlXCeajZKFCvcmBAs4Dm/NOz0+/YEj0FIq8ABSlBMzgpqpGSnWt0GuM2RUDZ8FCslEComS8iO3L5y0CI7eL+XnHnKkpB7tgiygBLdkxVejuGdp7QE/ZSh1KNeo9UR/iOSrhoS2gZpvt3PWDXcN2PiWU2wwzCpFjp7UdhFWfePnhURQpxCF7yggvhFFCtkFmoEN1ekfHdHKgKNsaL83urKyH2jz8xN/V8D+jiOWERl4CZK2gesVIK2NQkYcoE8os6UllGM9DNEQg1njG7s7u4RnVuqfQkk4NwNG7J0cQFQ+ZmRmDoVHPfrrYBY2fOL2bZIXlOzfyUHnCtQN2oEjBXaF/p9AXEe9LJY8O35gAAAAASUVORK5CYII="/></a>
+      <a href=""><img class="mt-2" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAbVJREFUWEftmI1NAzEMhV83gUmASYBJgEmgkwCTwCaghy7o4vPvJYgKYenUVrrmvj6/OHYPOLE4nBgP/gzQGYAbABcA+J7X+6I2X3kdAbxUM1BV6B7AXeEhDYzfS0UW6BLA46JEamFxUxosA1RVxQN+AOCqFQE9A6A6M+MJwK21oAc0okwzOM2uhamUBURVqE4l+BDuKrmzuBvpPxlUiWp1YQG9FQ185WxxC4gqnmeArAUstSKjeuttvqspVFXHUrn5p5UM7QdtVJKLVdXRZCcI/WcZWoJ16ZZANB+hsqFt4eoaXdokULXuzADirqRKXyGBqv6ZAdSlXQJ9ZHO13PfrQGrtCH5ExlPfwlRT9hNAbsoiU+8Binzpmjo6UPcARb7sfChTFh2qBFofnq/KAdlaW1qLxTFqX9zCWK2yM3ZZJ4p2DlWOj1GgTQuiAVVUGgXaPH+0QRsBUnuo0RZ2L5DZV3tAbRj05rA9QF3dyXSM8h6vNlWB3IlDO+2tY8kaFLNArF/cUeFoHc1la8CWwutVNxgBpSdWqx/KdB/tz4VWgeUk2j5rI1G4fkWhcLEZN/wDRSp+AlLjciVyaj2bAAAAAElFTkSuQmCC"/></a>
+    </div>
+  
+  <!-- Footer -->
+  <div class="fixed bg-body-secondary mt-2" style="height: 5vh;">
+    <footer class="text-center text-primary">
+        &copy;QUEEN
+    </footer>
+  </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>

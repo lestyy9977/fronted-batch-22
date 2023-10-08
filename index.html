@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <!-- Link Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar bg-body-secondary fixed mb-2">
+        <div class="container-fluid">
+          <div>
+          <button class="ms-4 me-3 navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <img style="width: 40px;" src="logo-removebg-preview.png" alt="">
+            <a class="navbar-brand" href="#">QUEEN</a>
+          </div>
+          <form class="d-flex mt-2" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+                
+
+            <!-- OffCanvas -->
+          <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">QUEEN</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="login.html">Log In</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Dropdown
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Coorporate Tour</a></li>
+                    <li><a class="dropdown-item" href="private.html">Private Tour</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+    </nav>
+
+    <!-- Carousel -->
+    <div class="d-flex justify-content-center">
+        <div id="carouselExampleAutoplaying" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="japan.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="mekah.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="paris.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="america.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="maldives.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+    </div>
+
+    <!-- Intro -->
+    <div class="row mt-2">
+      <div class="col-md-6 py-3 py-md-0">
+        <div class="card">
+          <img src="europetrip.jpg" alt="">
+        </div>
+      </div>
+
+      <div class="col-md-6 py-3 py-md-0">
+        <div class="container">
+          <p class=" text-center container rounded-4 border border-primary p-1 mb-1">
+            TOUR DESCRIPTION
+          </p>
+          <div class="d-flex ms-4">
+            <img class="mt-2" width="40px" height="35px" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAQdJREFUWEftmIENgkAMRR+b6Ca6iU6iTqKb6Ca6iaaGMwQo8OXO3BkuIQFS2sdvKZSKzFaVGQ9FAx2BQ63oCbDjoaXav30pCqkBVPuygFbAGdgkKPpH7XMLhP1PGC9lzwQgbZcG04HqA9rV6vyAiT1waQbqA2oWY2qoztO6ALUklxWa0gDVtA72p7GULUBFK2RdO3TuG2CbLfV8tBryHMU6775cYwVQ/chAamo8+2gpU/uNZ/+/QNmlTC1S1V4uajWAai8DZZey5SkLCnw1Twnyld+HrHivwh3PMZ00ddiQeJ8TRbh23R4WvUEx5eRqvDYkmjrhm2p0chVuMq6p8vcjbmTHW3ZALy68mSVhvYacAAAAAElFTkSuQmCC"/>
+            <p style="margin-left: 10px;margin-top: 5px;">Harga Special : Periode Oktober - Desember 2023</p>
+          </div>
+          <div class="d-flex ms-4">
+            <img class="mt-2" width="40px" height="35px" src="https://boxicons.com/static/svg/regular/bx-pin.svg" alt="">
+            <p style="margin-left: 10px;margin-top: 10px;"> Paris, Amsterdam, Luxemburg, Frankfurt, Zurich, Milan</p>
+          </div>
+          <div class="d-flex ms-4">
+            <img class="mt-2" width="40px" height="35px" src="https://boxicons.com/static/svg/regular/bx-money.svg" alt="">
+            <p style="margin-left: 10px;margin-top: 14px;"> Start From : IDR 40.000.000</p>
+          </div>
+          <p class=" text-center container rounded-4 border border-primary p-1 mb-1">
+            HIGHLIGHTS
+          </p>
+          <div class="d-flex ">
+            <img class="ms-4 mt-2" width="40px" height="35px" src="https://boxicons.com/static/svg/regular/bx-message-rounded-dots.svg" alt="">
+            <p style="text-align: justify;" class="d-flex ms-2 mt-2 me-4">
+              Berwisata ke enam negara bersama keluarga, teman, atau rekan kantor anda yang dikemas dalam perjalanan private. 
+              Anda akan menikmati pengalaman menjelajah keindahan berbagai bangunan ala eropa, arsitektur, peninggalan budaya,
+              dan keindahan alam benua biru. 
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card -->
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card">
+          <img src="japan.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+              <h5 class="card-title text-center">PAKET TOUR JAPAN 2023</h5>
+              <p style="text-align: center;">07 Hari / 05 Malam</p>
+            <div class="d-flex ms-4">
+              <img class="mt-2" width="40px" height="35px" src="https://boxicons.com/static/svg/regular/bx-money.svg" alt="">
+              <p style="margin-left: 10px;margin-top: 8px;"> Harga Tour Per Orang: IDR 28.000.000 <br>(Minimal Peserta 20 Orang)</p>
+            </div>
+            <div class="d-flex ms-4">
+              <img class="mt-2" width="40px" height="28px" src="pin.png" alt="">
+              <p style="margin-left: 10px;margin-top: 8px;"> Tokyo, Osaka, Kyoto, Mt. Fuji</p>
+            </div>
+            <div class="d-flex justify-content-center">
+              <a class="btn btn-outline-primary" href="">Lihat Tour Detail</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="mekah.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title text-center">PAKET UMROH 2023</h5>
+              <p style="text-align: center;">07 Hari / 05 Malam</p>
+            <div class="d-flex ms-4">
+              <img class="mt-2" width="40px" height="35px" src="https://boxicons.com/static/svg/regular/bx-money.svg" alt="">
+              <p style="margin-left: 10px;margin-top: 8px;"> Harga Tour Per Orang: IDR 32.000.000 <br>(Minimal Peserta 20 Orang)</p>
+            </div>
+            <div class="d-flex ms-4">
+              <img class="mt-2" width="40px" height="28px" src="pin.png" alt="">
+              <p style="margin-left: 10px;margin-top: 8px;"> Makkah, Madinah, Thaif</p>
+            </div>
+            <div class="d-flex justify-content-center">
+              <a class="btn btn-outline-primary" href="">Lihat Tour Detail</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="Korea.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title text-center">PAKET TOUR KOREA 2023</h5>
+              <p style="text-align: center;">07 Hari / 05 Malam</p>
+            <div class="d-flex ms-4">
+              <img class="mt-2" width="40px" height="35px" src="https://boxicons.com/static/svg/regular/bx-money.svg" alt="">
+              <p style="margin-left: 10px;margin-top: 8px;"> Harga Tour Per Orang: IDR 28.000.000 <br>(Minimal Peserta 20 Orang)</p>
+            </div>
+            <div class="d-flex ms-4">
+              <img class="mt-2" width="40px" height="28px" src="pin.png" alt="">
+              <p style="margin-left: 10px;margin-top: 8px;"> Tokyo, Osaka, Kyoto, Mt. Fuji</p>
+            </div>
+            <div class="d-flex justify-content-center">
+              <a class="btn btn-outline-primary" href="">Lihat Tour Detail</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="america.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title text-center">PAKET TOUR AMERICA 2023</h5>
+              <p style="text-align: center;">07 Hari / 05 Malam</p>
+            <div class="d-flex ms-4">
+              <img class="mt-2" width="40px" height="35px" src="https://boxicons.com/static/svg/regular/bx-money.svg" alt="">
+              <p style="margin-left: 10px;margin-top: 8px;"> Harga Tour Per Orang: IDR 28.000.000 <br>(Minimal Peserta 20 Orang)</p>
+            </div>
+            <div class="d-flex ms-4">
+              <img class="mt-2" width="40px" height="28px" src="pin.png" alt="">
+              <p style="margin-left: 10px;margin-top: 8px;"> Tokyo, Osaka, Kyoto, Mt. Fuji</p>
+            </div>
+            <div class="d-flex justify-content-center">
+              <a class="btn btn-outline-primary" href="">Lihat Tour Detail</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+          <div class="card">
+            <img src="england2.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title text-center">PAKET TOUR ENGLAND 2023</h5>
+              <p style="text-align: center;">07 Hari / 05 Malam</p>
+            <div class="d-flex ms-4">
+              <img class="mt-2" width="40px" height="35px" src="https://boxicons.com/static/svg/regular/bx-money.svg" alt="">
+              <p style="margin-left: 10px;margin-top: 8px;"> Harga Tour Per Orang: IDR 28.000.000 <br>(Minimal Peserta 20 Orang)</p>
+            </div>
+            <div class="d-flex ms-4">
+              <img class="mt-2" width="40px" height="28px" src="pin.png" alt="">
+              <p style="margin-left: 10px;margin-top: 8px;"> Tokyo, Osaka, Kyoto, Mt. Fuji</p>
+            </div>
+            <div class="d-flex justify-content-center">
+              <a class="btn btn-outline-primary" href="">Lihat Tour Detail</a>
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="dubai.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title text-center">PAKET TOUR DUBAI 2023</h5>
+              <p style="text-align: center;">07 Hari / 05 Malam</p>
+            <div class="d-flex ms-4">
+              <img class="mt-2" width="40px" height="35px" src="https://boxicons.com/static/svg/regular/bx-money.svg" alt="">
+              <p style="margin-left: 10px;margin-top: 8px;"> Harga Tour Per Orang: IDR 28.000.000 <br>(Minimal Peserta 20 Orang)</p>
+            </div>
+            <div class="d-flex ms-4">
+              <img class="mt-2" width="40px" height="28px" src="pin.png" alt="">
+              <p style="margin-left: 10px;margin-top: 8px;"> Tokyo, Osaka, Kyoto, Mt. Fuji</p>
+            </div>
+            <div class="d-flex justify-content-center">
+              <a class="btn btn-outline-primary" href="">Lihat Tour Detail</a>
+            </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="fixed bg-body-secondary" style="height: 5vh;">
+      <footer class="text-center text-primary">
+          &copy;QUEEN
+      </footer>
+    </div>
+
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>

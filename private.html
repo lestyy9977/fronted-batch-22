@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <!-- Link Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar bg-body-secondary fixed mb-2">
+        <div class="container-fluid">
+            <div>
+                <img style="width: 40px;" src="logo-removebg-preview.png" alt="">
+                <a class="navbar-brand" href="#">QUEEN</a>
+            </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+
+            <!-- OffCanvas -->
+          <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">QUEEN</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="login.html">Log In</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Dropdown
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Coorporate Tour</a></li>
+                    <li><a class="dropdown-item" href="#">Private Tour</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>
+              </ul>
+                <form class="d-flex mt-2" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+          </div>
+        </div>
+    </nav>
+
+    <!-- Carousel -->
+    <div class="d-flex justify-content-center">
+        <div id="carouselExampleAutoplaying" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="japan.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="mekah.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="paris.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="america.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="maldives.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+    </div>
+    
+    <!-- Intro -->
+    <div class="row mt-5">
+        <div class="container" style="width: 18rem;">
+            <img src="india3.jpg" class="card-img-top" alt="...">
+        </div>
+        <div class="container" style="width: 18rem;">
+            <img src="marocco.jpeg" class="card-img-top" alt="...">
+        </div>
+        <div class="container" style="width: 18rem;">
+            <img src="Korea.jpg" class="card-img-top" alt="...">
+        </div>
+        <div class="container" style="width: 18rem;">
+            <img src="spain.jpeg" class="card-img-top" alt="...">
+        </div>
+    </div>
+    <div class="row mt-2">
+        <div class="container" style="width: 18rem;">
+            <img src="dubai.jpeg" class="card-img-top" alt="...">
+        </div>
+        <div class="container" style="width: 18rem;">
+            <img src="mekah.jpg" class="card-img-top" alt="...">
+        </div>
+        <div class="container" style="width: 18rem;">
+            <img src="marocco.jpeg" class="card-img-top" alt="...">
+        </div>
+        <div class="container" style="width: 18rem;">
+            <img src="turki2.jpeg" class="card-img-top" alt="...">
+        </div>
+    </div>
+
+    <!-- Card -->
+    
+
+    <!-- Footer -->
+    <div class="fixed bg-body-secondary mt-5" style="height: 5vh;">
+      <footer class="text-center text-primary">
+          &copy;QUEEN
+      </footer>
+    </div>
+
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>
